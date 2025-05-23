@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Sistema Calzatura – Enterprise Safety Footwear</title>
+
+  <!-- Tailwind CDN (only safe plugins) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#F38D23',
+            dark: '#10161A',
+            'light-bg': '#FFFAF2'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & AOS for scroll animations -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <style>
+    body { font-family:'Poppins',sans-serif; color:theme('colors.dark'); }
+    .blob { clip-path: polygon(60% 0%,100% 50%,60% 100%,0% 100%,0% 50%,0% 0%); }
+    @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .clip-top   { clip-path: polygon(0 5%,100% 0,100% 100%,0 100%); }
+    .clip-bottom{ clip-path: polygon(0 0,100% 0,100% 95%,0 100%); }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.231.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="antialiased">
+
+  <!-- NAVBAR -->
+<header class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2">
+      <img src="assets/y (6).png" class="h-12 w-auto" alt="…">
+      <span class="text-xl font-bold">SISTEMA <span class="text-brand">CALZATURA</span></span>
+    </a>
+
+    <!-- Only two items -->
+    <nav class="hidden md:flex space-x-10 text-gray-800 text-lg">
+      
+      <a href="#contact" class="hidden md:inline-block px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg text-lg">
+        Contattaci
+      </a>
+    </nav>
+
+    <!-- Mobile toggle -->
+    <button id="nav-toggle" class="md:hidden p-2 text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white/90 backdrop-blur-sm">
+    <nav class="flex flex-col p-4 space-y-2">
+      
+      <a href="#contact" class="mt-2 px-4 py-2 bg-brand text-white rounded-full text-center">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+  <!-- HERO -->
+  <section
+  id="hero"
+  class="relative bg-light-bg bg-cover bg-center min-h-screen flex items-center overflow-hidden pt-20 lg:pt-0"
+  style="background-image:url('assets/hero-bg.jpg')"
+>
+  <div class="absolute inset-0 bg-white/60"></div>
+
+  <div class="relative z-10 container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
+    <!-- Text -->
+    <div class="lg:col-span-5 lg:col-start-2 text-center lg:text-left" data-aos="fade-right">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+        Rivoluziona<br>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500">
+          la sicurezza dei dipendenti
+        </span>
+      </h1>
+      <p class="text-gray-700 text-lg mb-8 max-w-md mx-auto lg:mx-0">
+        Fitting professionali in negozio + analisi in tempo reale + fatturazione con un clic —
+        tutto in un unico programma integrato.
+      </p>
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+        <a href="#contact"
+           class="px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg hover:scale-105 transition">
+          Contattaci
+        </a>
+        <a href="#benefits"
+           class="px-6 py-3 border-2 border-brand text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">
+          Scopri di più
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="lg:col-span-5 lg:col-start-7 flex justify-center lg:justify-end" data-aos="fade-left">
+      <img
+        src="assets/shoe-hero.png"
+        alt="Scarpa di sicurezza"
+        class="w-11/12 lg:w-4/5 h-auto animate-float"
+      />
+      <div class="absolute lg:-bottom-12 lg:-right-12 w-48 h-48 blob bg-brand opacity-10 animate-float"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!-- Decorative blobs -->
+  <div class="absolute bottom-10 left-10 w-48 h-48 blob bg-brand opacity-20 animate-float"></div>
+  <div class="absolute top-24 right-20 w-72 h-72 blob bg-brand opacity-10 animate-float"></div>
+</section>
+
+
+  <!-- ABOUT US -->
+  <!-- ABOUT US -->
+<section id="about" class="py-24 bg-white clip-top" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <!-- Text Column -->
+    <div data-aos="fade-right">
+      <h2 class="text-4xl font-bold mb-4">Informazioni su Sistema Calzatura</h2>
+      <p class="text-gray-700 mb-6">
+        Siamo in missione per trasformare il modo in cui le aziende gestiscono le calzature di sicurezza. Combinando una rete certificata di fitting in negozio con una piattaforma digitale intuitiva, offriamo:
+      </p>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="globe" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Copertura Globale</h4>
+            <p class="text-gray-600">Una rete di partner selezionati in oltre 30 paesi garantisce ai tuoi team la calzata perfetta, ovunque si trovino.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Implementazione Rapida</h4>
+            <p class="text-gray-600">Dalla configurazione iniziale alla piena implementazione in meno di due settimane—per vedere il ROI già prima del prossimo trimestre.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Approfondimenti Basati sui Dati</h4>
+            <p class="text-gray-600">Dashboard in tempo reale ti tengono aggiornato su spese, conformità e metriche di comfort, permettendoti di ottimizzare continuamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image Column -->
+    <div class="text-center" data-aos="fade-left">
+      <img src="assets/shoe-hero (4).png" alt="Illustrazione Chi Siamo" class="w-full rounded-xl shadow-lg" />
+    </div>
+  </div>
+</section>
+
+
+<!-- PROBLEMS WE SOLVE -->
+<section id="problems" class="py-24 bg-dark text-white clip-bottom" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-4xl font-bold">Eliminiamo i tuoi punti dolenti</h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+    <div class="flex items-start gap-4">
+      <i data-lucide="shopping-cart" class="w-8 h-8 text-brand flex-shrink-0"></i>
+      <div>
+        <h4 class="font-semibold text-xl">Approvvigionamento frammentato</h4>
+        <p>Un portale unico per tutti gli ordini e i rifornimenti.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <i data-lucide="dollar-sign" class="w-8 h-8 text-brand flex-shrink-0"></i>
+      <div>
+        <h4 class="font-semibold text-xl">Sforamenti di budget</h4>
+        <p>Limiti di spesa per dipendente mantengono i costi sotto controllo.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <i data-lucide="layers" class="w-8 h-8 text-brand flex-shrink-0"></i>
+      <div>
+        <h4 class="font-semibold text-xl">Calzata scorretta</h4>
+        <p>I fitting professionali in negozio garantiscono la misura giusta ogni volta.</p>
+      </div>
+    </div>
+    <div class="flex items-start gap-4">
+      <i data-lucide="file-text" class="w-8 h-8 text-brand flex-shrink-0"></i>
+      <div>
+        <h4 class="font-semibold text-xl">Sovraccarico amministrativo</h4>
+        <p>Fatture e report di conformità automatizzati—zero pratiche cartacee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="process" class="relative py-32 bg-white overflow-hidden">
+  <div class="container mx-auto px-6">
+    <!-- Section Title -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">Come Funziona</h2>
+      <p class="mt-2 text-gray-600">Un percorso fluido in 4 fasi verso la sicurezza totale delle calzature.</p>
+    </div>
+
+    <!-- Timeline Connector Line -->
+    <div class="relative">
+      <div class="hidden md:block absolute inset-y-1/2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+
+      <!-- Steps Grid -->
+      <ul class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+        <!-- Step 1 -->
+        <li class="flex flex-col items-center text-center group" data-aos="fade-up">
+          <div class="w-20 h-20 mb-4 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-300 group-hover:from-brand group-hover:to-orange-600 flex items-center justify-center transition">
+            <i data-lucide="settings" class="w-10 h-10 text-brand group-hover:text-white transition"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Definisci le Specifiche</h3>
+          <p class="mt-2 text-gray-600 max-w-xs">
+            Imposta rapidamente la classe di sicurezza e i parametri di budget.
+          </p>
+        </li>
+        <!-- Step 2 -->
+        <li class="flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-20 h-20 mb-4 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-300 group-hover:from-brand group-hover:to-orange-600 flex items-center justify-center transition">
+            <i data-lucide="user-check" class="w-10 h-10 text-brand group-hover:text-white transition"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Prova in Negozio</h3>
+          <p class="mt-2 text-gray-600 max-w-xs">
+            I dipendenti scelgono e provano la loro calzatura perfetta con la guida di professionisti.
+          </p>
+        </li>
+        <!-- Step 3 -->
+        <li class="flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-20 h-20 mb-4 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-300 group-hover:from-brand group-hover:to-orange-600 flex items-center justify-center transition">
+            <i data-lucide="file-text" class="w-10 h-10 text-brand group-hover:text-white transition"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Fatturazione Centralizzata</h3>
+          <p class="mt-2 text-gray-600 max-w-xs">
+            Un'unica fattura consolidata—automatizzata, digitale e pronta per la verifica.
+          </p>
+        </li>
+        <!-- Step 4 -->
+        <li class="flex flex-col items-center text-center group" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-20 h-20 mb-4 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-300 group-hover:from-brand group-hover:to-orange-600 flex items-center justify-center transition">
+            <i data-lucide="bar-chart-2" class="w-10 h-10 text-brand group-hover:text-white transition"></i>
+          </div>
+          <h3 class="font-semibold text-lg">Report e Approfondimenti</h3>
+          <p class="mt-2 text-gray-600 max-w-xs">
+            Dashboard in tempo reale monitorano metriche di spesa, conformità e comfort.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits" class="py-24 bg-light-bg clip-top" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-4xl font-bold">Vantaggi Principali</h2>
+    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+      Scopri perché le aziende si affidano a Sistema Calzatura per mantenere la loro forza lavoro sicura, confortevole e produttiva.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Benefit 1 -->
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-right">
+      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+        <i data-lucide="user-check" class="w-8 h-8"></i>
+      </div>
+      <h4 class="text-xl font-semibold mb-2">Calzata Perfetta, Sempre</h4>
+      <p class="text-gray-600">
+        I fitting professionali in negozio garantiscono la misura ideale—niente resi, nessun problema.
+      </p>
+    </div>
+
+    <!-- Benefit 2 -->
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-up">
+      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+        <i data-lucide="shield-off" class="w-8 h-8"></i>
+      </div>
+      <h4 class="text-xl font-semibold mb-2">Protezione Certificata ASTM</h4>
+      <p class="text-gray-600">
+        Punta in acciaio, resistenti alle forature e agli scivolamenti—le nostre calzature superano i più elevati standard di sicurezza.
+      </p>
+    </div>
+
+    <!-- Benefit 3 -->
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-up">
+      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+        <i data-lucide="refresh-ccw" class="w-8 h-8"></i>
+      </div>
+      <h4 class="text-xl font-semibold mb-2">Fatturazione senza Problemi</h4>
+      <p class="text-gray-600">
+        Una fattura unica per tutti gli ordini—report digitali ti mantengono pronto per le verifiche in ogni momento.
+      </p>
+    </div>
+
+    <!-- Benefit 4 -->
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-left">
+      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+        <i data-lucide="bar-chart-2" class="w-8 h-8"></i>
+      </div>
+      <h4 class="text-xl font-semibold mb-2">Analisi in Tempo Reale</h4>
+      <p class="text-gray-600">
+        Dashboard in tempo reale tracciano metriche di spesa, conformità e comfort permettendoti di ottimizzare continuamente.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- LOYALTY REWARDS -->
+<section id="loyalty" class="py-20 bg-brand text-white text-center" data-aos="fade-up">
+  <div class="max-w-3xl mx-auto px-6 space-y-6">
+    <h2 class="text-4xl font-bold">Ricompense Fedeltà</h2>
+    <p class="text-lg">
+      Ogni ordine ripetuto sblocca uno <strong>sconto permanente dell’1%</strong>, fino al <strong>10%</strong>. Perché la tua fedeltà dovrebbe ripagarti—anno dopo anno.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="flex items-center gap-2">
+        <i data-lucide="award" class="w-6 h-6"></i>
+        <span>Sconti a livelli</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+        <span>Risparmi automatici</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i data-lucide="gift" class="w-6 h-6"></i>
+        <span>Offerte esclusive</span>
+      </div>
+    </div>
+    <a href="#contact"
+       class="inline-block mt-6 px-8 py-4 bg-white text-brand font-semibold rounded-full shadow-lg hover:bg-gray-100 transition">
+      Richiedi i tuoi premi
+    </a>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="choose" class="py-24 bg-white clip-top" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="space-y-6" data-aos="fade-right">
+      <h2 class="text-4xl font-bold">Perché i nostri clienti ci scelgono</h2>
+      <p class="text-gray-700">
+        Da rollout globali ad analisi in tempo reale, ecco cosa distingue Sistema Calzatura:
+      </p>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <div class="w-10 h-10 flex-shrink-0 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Copertura Globale</h4>
+            <p class="text-gray-600">Partner di fitting certificati in oltre 30 paesi.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <div class="w-10 h-10 flex-shrink-0 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="clock" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Implementazione Rapida</h4>
+            <p class="text-gray-600">Attivo in meno di 2 settimane—ROI già dal prossimo trimestre.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <div class="w-10 h-10 flex-shrink-0 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Approfondimenti Basati sui Dati</h4>
+            <p class="text-gray-600">Dashboard monitorano spese, conformità e comfort in tempo reale.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <div class="w-10 h-10 flex-shrink-0 bg-brand text-white rounded-full flex items-center justify-center">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Supporto Dedicato</h4>
+            <p class="text-gray-600">Il tuo account manager personale garantisce operazioni senza intoppi.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="text-center" data-aos="fade-left">
+      <img src="assets/shoe-hero (5).png" alt="Perché sceglierci" class="mx-auto rounded-xl shadow-lg" />
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED LOGOS -->
+<section class="py-16 bg-gray-50" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 text-center mb-8">
+    <h3 class="text-2xl font-semibold">I nostri partner di fiducia</h3>
+    <p class="text-gray-600">Al servizio dei leader in ogni settore.</p>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
+    <img src="assets/y (3).png" alt="Marchio 1" class="mx-auto grayscale hover:grayscale-0 transition">
+    <img src="assets/y (2).png" alt="Marchio 2" class="mx-auto grayscale hover:grayscale-0 transition">
+    <img src="assets/y (4).png" alt="Marchio 3" class="mx-auto grayscale hover:grayscale-0 transition">
+    <img src="assets/y (5).png" alt="Marchio 4" class="mx-auto grayscale hover:grayscale-0 transition">
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="py-24 bg-light-bg clip-bottom" data-aos="fade-up">
+  <div class="max-w-2xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-3xl font-bold">Contattaci</h2>
+    <p class="text-gray-600 mt-2">
+      Pronto a ottimizzare il tuo programma di calzature di sicurezza? Lasciaci i tuoi dati e ti contatteremo entro 24 ore.
+    </p>
+  </div>
+  <form class="max-w-2xl mx-auto px-6 grid gap-6"
+        action="#" method="POST">
+    <div class="grid sm:grid-cols-2 gap-6">
+      <input type="text" name="name" required
+             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
+             placeholder="Nome completo / Azienda">
+      <input type="email" name="email" required
+             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
+             placeholder="Indirizzo email">
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <input type="tel" name="phone"
+             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
+             placeholder="Numero di telefono">
+      <input type="text" name="employees"
+             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
+             placeholder="Numero di dipendenti">
+    </div>
+    <textarea name="message" rows="4" required
+              class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
+              placeholder="Come possiamo aiutarti?"></textarea>
+    <button type="submit"
+            class="w-full py-4 bg-brand text-white font-semibold rounded-full shadow-lg hover:scale-105 transition">
+      Invia richiesta
+    </button>
+  </form>
+</section>
+
+<!-- FULL-INFO TWO-COLUMN FOOTER -->
+<footer class="bg-gray-50 py-12">
+  <div class="max-w-screen-md mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+    <!-- Column 1: Logo -->
+    <div class="flex flex-col items-center space-y-4">
+      <img
+        src="assets/logo (1).png"
+        alt="Ferrari Service S.r.l."
+        class="h-28 w-auto"
+      />
+    </div>
+    <!-- Column 2: Full Contact Info -->
+    <div class="flex flex-col items-center space-y-1 text-gray-800 text-sm leading-snug">
+      <p class="font-semibold">Ferrari Service S.r.l.</p>
+      <p>Via Daniele Manin 176</p>
+      <p>31015 Conegliano (TV)</p>
+      <p>P.IVA 03615110263</p>
+      <p><a href="mailto:info@ferrariservice.it" class="text-brand hover:underline">info@ferrariservice.it</a></p>
+      <p><a href="tel:+390438896013" class="text-brand hover:underline">tel. 0438.896013</a></p>
+      <p><a href="tel:+390438896317" class="text-brand hover:underline">tel. 0438.896317</a></p>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <p class="mt-8 text-center text-gray-600 text-sm">
+    © 2025 Tutti i diritti riservati a Ferrari Service S.r.l.
+  </p>
+</footer>
+
+
+
+<!-- Initialize Lucide icons -->
+<script>
+  lucide.createIcons();
+</script>
+
+
+<!-- Init Lucide icons -->
+<script>lucide.createIcons();</script>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+    document.getElementById('nav-toggle').onclick = () => document.getElementById('mobile-menu').classList.toggle('hidden');
+  </script>
+  <script>lucide.createIcons();</script>
+
+</body>
+</html>
