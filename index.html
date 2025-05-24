@@ -39,6 +39,7 @@
     .clip-top   { clip-path: polygon(0 5%,100% 0,100% 100%,0 100%); }
     .clip-bottom{ clip-path: polygon(0 0,100% 0,100% 95%,0 100%); }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.231.0/dist/umd/lucide.min.js"></script>
 </head>
 <body class="antialiased">
@@ -98,40 +99,340 @@
 
   <div class="relative z-10 container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
     <!-- Text -->
-    <div class="lg:col-span-5 lg:col-start-2 text-center lg:text-left" data-aos="fade-right">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
-        Rivoluziona<br>
-        <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500">
-          la sicurezza dei dipendenti
-        </span>
-      </h1>
-      <p class="text-gray-700 text-lg mb-8 max-w-md mx-auto lg:mx-0">
-        Fitting professionali in negozio + analisi in tempo reale + fatturazione con un clic —
-        tutto in un unico programma integrato.
-      </p>
-      <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-        <a href="#contact"
-           class="px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg hover:scale-105 transition">
-          Contattaci
-        </a>
-        <a href="#benefits"
-           class="px-6 py-3 border-2 border-brand text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">
-          Scopri di più
-        </a>
+    <div class="lg:col-span-5 lg:col-start-2 text-left" data-aos="fade-right">
+      <div class="lg:max-w-2xl space-y-6">
+        <!-- Main title -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark">
+          Sistema Calzatura
+        </h1>
+
+        <!-- Gradient sub-heading -->
+        <p class="text-2xl font-semibold leading-snug">
+          <span class="block bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+            La soluzione smart per la
+          </span>
+          <span class="block bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+            sicurezza dei tuoi dipendenti
+          </span>
+        </p>
+
+        <!-- Description -->
+        <p class="text-gray-700 text-lg">
+          Fitting professionali in negozio + analisi in tempo reale + fatturazione con un clic — tutto in un unico programma integrato.
+        </p>
+
+        <!-- Actions -->
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#contact"
+             class="px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg hover:scale-105 transition">
+            Contattaci
+          </a>
+          <a href="#benefits"
+             class="px-6 py-3 border-2 border-brand text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">
+            Scopri di più
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- Image -->
-    <div class="lg:col-span-5 lg:col-start-7 flex justify-center lg:justify-end" data-aos="fade-left">
+    <div class="lg:col-span-5 lg:col-start-7 flex justify-center lg:justify-end relative" data-aos="fade-left">
       <img
         src="assets/shoe-hero.png"
-        alt="Scarpa di sicurezza"
-        class="w-11/12 lg:w-4/5 h-auto animate-float"
+        alt="Scarpa antinfortunistica Ferrari Service"
+        class="w-full max-w-xl h-auto animate-float"
       />
       <div class="absolute lg:-bottom-12 lg:-right-12 w-48 h-48 blob bg-brand opacity-10 animate-float"></div>
     </div>
   </div>
 </section>
+
+<!-- INTRO “Gestire le calzature…” – ENHANCED SECTION -->
+<!-- INTRO “Gestire le calzature…” – WITH ONLY TOP WAVE -->
+<section
+  id="intro"
+  class="relative bg-white clip-top py-20 px-6 overflow-hidden"
+  data-aos="fade-up"
+>
+  <!-- Top wave -->
+  <svg
+    class="absolute top-0 left-0 w-full h-16"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M0,64L48,91C96,117,192,171,288,177C384,183,480,139,576,122C672,105,768,117,864,133C960,149,1056,171,1152,160C1248,149,1344,107,1392,85L1440,64L1440,0L0,0Z"
+      fill="rgba(175,29,39,0.05)"
+    />
+  </svg>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+    <!-- Styled two-line heading -->
+    <h2
+      class="relative inline-block text-3xl md:text-4xl font-extrabold leading-tight"
+      data-aos="fade-down"
+    >
+      <span class="block bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+        Gestire le calzature antinfortunistiche
+      </span>
+      <span class="block bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+        non è mai stato così semplice!
+      </span>
+      <span
+        class="absolute left-1/2 -bottom-1 w-24 h-1 bg-brand rounded-full -translate-x-1/2"
+      ></span>
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="text-lg text-dark/70" data-aos="fade-up" data-aos-delay="100">
+      Con <strong>Sistema Calzatura</strong>, ogni lavoratore può scegliere e provare le
+      scarpe più adatte alle proprie esigenze, rispettando il budget e le
+      normative aziendali. Il tutto con un processo snello e senza burocrazia.
+    </p>
+
+    <!-- CTA button -->
+    <a
+      href="#come-funziona"
+      class="inline-block mt-4 px-8 py-3 rounded-full border-2 border-brand text-brand font-semibold
+             hover:bg-brand hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      Scopri di più
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- COME FUNZIONA – CLEAN & ENGAGING ACCORDION -->
+<!-- COME FUNZIONA – RESPONSIVE ACCORDION WITH PATTERN & WAVES -->
+<section
+  id="come-funziona"
+  class="relative py-20 clip-top clip-bottom overflow-hidden"
+  style="
+    background-image:
+      radial-gradient(rgba(175,29,39,0.05) 1px, transparent 1px),
+      radial-gradient(rgba(175,29,39,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  "
+>
+  <!-- Top SVG wave -->
+  <svg class="absolute top-0 left-0 w-full h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path
+      d="M0,64L48,91C96,117,192,171,288,177C384,183,480,139,576,122C672,105,768,117,864,133C960,149,1056,171,1152,160C1248,149,1344,107,1392,85L1440,64L1440,0L0,0Z"
+      fill="rgba(175,29,39,0.1)"
+    />
+  </svg>
+
+  <!-- Floating blobs 
+  <div class="absolute -top-16 -left-16 w-72 h-72 blob bg-brand/20 opacity-30 animate-float"></div>
+  <div class="absolute bottom-10 right-10 w-80 h-80 blob bg-brand/10 opacity-20 animate-float"></div>
+
+  <!-- Header -->
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center mb-12">
+  <h2
+  class="relative inline-block text-4xl font-extrabold mb-4
+         underline decoration-brand decoration-4 underline-offset-8"
+>
+  <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+    Come Funziona
+  </span>
+  …
+</h2>
+
+  <p class="text-lg text-dark/70">
+    Segui questi semplici passi per ottenere le tue calzature di sicurezza.
+  </p>
+</div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <!-- MOBILE: stacked cards -->
+    <div class="flex flex-col space-y-4 md:hidden">
+      <!-- Step 1 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">1</span>
+          <i data-lucide="credit-card" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Definizione Budget</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          L’azienda stabilisce un budget massimo e il tipo di calzatura richiesto per ogni dipendente (es. S1P, S3).
+        </p>
+      </div>
+      <!-- Step 2 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">2</span>
+          <i data-lucide="shopping-bag" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Selezione Calzatura</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          Il dipendente si reca in negozio e sceglie la calzatura più adatta al proprio ruolo.
+        </p>
+      </div>
+      <!-- Step 3 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">3</span>
+          <i data-lucide="check-circle" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Autorizzazione & Acquisto</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          Il negozio verifica l’autorizzazione e completa la vendita senza pagamenti anticipati.
+        </p>
+      </div>
+      <!-- Step 4 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">4</span>
+          <i data-lucide="file-text" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Fatturazione</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          Il negozio fattura direttamente all’azienda, evitando ogni onere.
+        </p>
+      </div>
+      <!-- Step 5 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">5</span>
+          <i data-lucide="bar-chart-2" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Report & Monitoraggio</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          L’azienda riceve report dettagliati sugli acquisti per ottimizzare le spese.
+        </p>
+      </div>
+      <!-- Step 6 -->
+      <div class="bg-gradient-to-br from-brand/20 to-brand/10 rounded-3xl shadow-lg p-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl font-bold text-brand/50">6</span>
+          <i data-lucide="package" class="w-6 h-6 text-brand"></i>
+          <h3 class="text-lg font-semibold text-brand">Documento di Consegna</h3>
+        </div>
+        <p class="mt-3 text-gray-700 text-sm">
+          Il sistema genera automaticamente il documento di consegna, garantendo tracciabilità.
+        </p>
+      </div>
+    </div>
+
+    <!-- DESKTOP: horizontal accordion -->
+    <div class="hidden md:flex h-80 overflow-hidden rounded-3xl shadow-lg space-x-4">
+      <!-- Panel 1 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">1</div>
+          <i data-lucide="credit-card" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Definizione Budget</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            L’azienda stabilisce un budget massimo e il tipo di calzatura richiesto per ogni dipendente (es. S1P, S3).
+          </p>
+        </div>
+      </div>
+      <!-- Panel 2 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">2</div>
+          <i data-lucide="shopping-bag" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Selezione Calzatura</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            Il dipendente si reca in negozio e sceglie la calzatura più adatta al proprio ruolo.
+          </p>
+        </div>
+      </div>
+      <!-- Panel 3 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">3</div>
+          <i data-lucide="check-circle" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Autorizzazione & Acquisto</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            Il negozio verifica l’autorizzazione e completa la vendita senza pagamenti anticipati.
+          </p>
+        </div>
+      </div>
+      <!-- Panel 4 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">4</div>
+          <i data-lucide="file-text" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Fatturazione</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            Il negozio fattura direttamente all’azienda, evitando ogni onere.
+          </p>
+        </div>
+      </div>
+      <!-- Panel 5 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">5</div>
+          <i data-lucide="bar-chart-2" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Report & Monitoraggio</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            L’azienda riceve report dettagliati sugli acquisti per ottimizzare le spese.
+          </p>
+        </div>
+      </div>
+      <!-- Panel 6 -->
+      <div class="relative group flex-1 transition-[flex] duration-500 ease-in-out
+                  bg-gradient-to-br from-brand/20 to-brand/10 hover:flex-[4]
+                  rounded-3xl shadow-lg overflow-hidden">
+        <div class="flex flex-col items-center justify-center h-full p-8 space-y-4">
+          <div class="absolute top-4 right-6 text-[4rem] font-extrabold text-dark/10 pointer-events-none">6</div>
+          <i data-lucide="package" class="w-12 h-12 text-brand"></i>
+          <h3 class="text-xl font-semibold text-brand text-center">Documento di Consegna</h3>
+          <p class="max-h-0 overflow-hidden text-gray-700 text-center
+                     transition-all duration-500 ease-in-out group-hover:max-h-40">
+            Il sistema genera automaticamente il documento di consegna, garantendo tracciabilità.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom SVG wave -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+    <svg class="w-full h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path
+        d="M0,192L48,181C96,171,192,149,288,138C384,128,480,128,576,149C672,171,768,213,864,213C960,213,1056,171,1152,144C1248,117,1344,107,1392,101L1440,96L1440,320L0,320Z"
+        fill="rgba(175,29,39,0.1)"
+      />
+    </svg>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) lucide.replace();
+  });
+</script>
+
+
+
+
+
 
 
 
@@ -145,11 +446,77 @@
 </section>
 
 
+
+<!-- CLIENT VIDEO SECTION -->
+<!-- CLIENT VIDEO SECTION -->
+<!-- CLIENT VIDEO SECTION – Dynamic Geometric Background -->
+<section
+  id="video"
+  class="relative bg-brand text-white py-20 px-6 overflow-hidden"
+  style="
+    /* subtle dotted grid + central glow */
+    background-image:
+      radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%),
+      radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 600px 600px, 20px 20px;
+  "
+  data-aos="fade-up"
+>
+  <!-- Geometric accents -->
+  <div class="absolute top-10 left-[-40px] w-44 h-44 bg-white/10 rotate-45"></div>
+  <div class="absolute bottom-10 right-[-60px] w-56 h-56 bg-white/10 -rotate-45"></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center space-y-10 px-6">
+    <!-- Styled Heading -->
+    <h2
+      class="relative inline-block text-3xl md:text-4xl font-extrabold text-white tracking-tight"
+      data-aos="fade-down"
+    >
+      Guarda il video
+      <span
+        class="absolute left-1/2 -bottom-1 w-24 h-1 bg-white rounded-full -translate-x-1/2"
+      ></span>
+    </h2>
+
+    <!-- 16:9 Video Container -->
+    <div
+      class="group relative w-full max-w-[1280px] pb-[56.25%] mx-auto rounded-xl overflow-hidden
+             shadow-2xl transform transition-transform duration-500 ease-in-out hover:scale-105
+             ring-2 ring-transparent group-hover:ring-4 group-hover:ring-white/50"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/GALTtUlfOk4"
+        title="Video dimostrativo Sistema Calzatura"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="absolute inset-0 w-full h-full"
+      ></iframe>
+    </div>
+
+    <!-- CTA Button -->
+    <a
+      href="#come-funziona"
+      class="inline-block px-8 py-3 rounded-full border-2 border-white text-white font-semibold
+             transform transition-transform duration-300 hover:bg-white hover:text-brand hover:scale-105
+             shadow-md hover:shadow-lg"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      Scopri di più
+    </a>
+  </div>
+</section>
+
+
+
   <!-- ABOUT US -->
-  <!-- ABOUT US -->
+  <!-- ABOUT US 
 <section id="about" class="py-24 bg-white clip-top" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-    <!-- Text Column -->
+    <!-- Text Column 
     <div data-aos="fade-right">
       <h2 class="text-4xl font-bold mb-4">Informazioni su Sistema Calzatura</h2>
       <p class="text-gray-700 mb-6">
@@ -185,15 +552,15 @@
         </div>
       </div>
     </div>
-    <!-- Image Column -->
+    <!-- Image Column 
     <div class="text-center" data-aos="fade-left">
       <img src="assets/shoe-hero (4).png" alt="Illustrazione Chi Siamo" class="w-full rounded-xl shadow-lg" />
     </div>
   </div>
-</section>
+</section> 
+-->
 
-
-<!-- PROBLEMS WE SOLVE -->
+<!-- PROBLEMS WE SOLVE 
 <section id="problems" class="py-24 bg-dark text-white clip-bottom" data-aos="fade-up">
   <div class="max-w-5xl mx-auto px-6 text-center mb-12">
     <h2 class="text-4xl font-bold">Eliminiamo i tuoi punti dolenti</h2>
@@ -229,12 +596,12 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
-<!-- HOW IT WORKS -->
+<!-- HOW IT WORKS 
 <section id="how-it-works" class="py-32 bg-light-bg">
-  <!-- Heading -->
+  <!-- Heading 
   <div class="max-w-4xl mx-auto text-center mb-20 px-6">
     <h2 class="text-5xl font-extrabold text-dark mb-4">
       Come Funziona
@@ -244,15 +611,15 @@
     </p>
   </div>
 
-  <!-- Griglia delle fasi -->
+  <!-- Griglia delle fasi 
   <div class="max-w-6xl mx-auto grid gap-12 px-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-    <!-- Fase 1 -->
+    <!-- Fase 1 
     <div
       class="relative bg-white rounded-3xl p-8 shadow hover:shadow-lg transition-shadow"
       data-aos="zoom-in"
       data-aos-delay="0"
     >
-      <!-- Numero cerchiato -->
+      <!-- Numero cerchiato 
       <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
         <div
           class="w-20 h-20 flex items-center justify-center rounded-full
@@ -261,7 +628,7 @@
           1
         </div>
       </div>
-      <!-- Contenuto -->
+      <!-- Contenuto 
       <div class="mt-12 text-center">
         <i data-lucide="settings" class="w-8 h-8 text-brand mx-auto mb-4"></i>
         <h3 class="text-xl font-semibold text-dark mb-2">
@@ -273,7 +640,7 @@
       </div>
     </div>
 
-    <!-- Fase 2 -->
+    <!-- Fase 2 
     <div
       class="relative bg-white rounded-3xl p-8 shadow hover:shadow-lg transition-shadow"
       data-aos="zoom-in"
@@ -298,7 +665,7 @@
       </div>
     </div>
 
-    <!-- Fase 3 -->
+    <!-- Fase 3 
     <div
       class="relative bg-white rounded-3xl p-8 shadow hover:shadow-lg transition-shadow"
       data-aos="zoom-in"
@@ -323,7 +690,7 @@
       </div>
     </div>
 
-    <!-- Fase 4 -->
+    <!-- Fase 4 
     <div
       class="relative bg-white rounded-3xl p-8 shadow hover:shadow-lg transition-shadow"
       data-aos="zoom-in"
@@ -351,61 +718,110 @@
 </section>
 
 
-<!-- BENEFITS -->
+<!-- VANTAGGI PRINCIPALI – COMPACT CARDS -->
 <section id="benefits" class="py-24 bg-light-bg clip-top" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto px-6 text-center mb-12">
-    <h2 class="text-4xl font-bold">Vantaggi Principali</h2>
-    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-      Scopri perché le aziende si affidano a Sistema Calzatura per mantenere la loro forza lavoro sicura, confortevole e produttiva.
-    </p>
-  </div>
+ <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+  <h2
+    class="relative inline-block text-4xl font-extrabold mb-4"
+    data-aos="fade-down"
+  >
+    <!-- Gradient text -->
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
+      I vantaggi per la tua azienda
+    </span>
+    <!-- Decorative underline -->
+    <span
+      class="absolute left-1/2 bottom-0 w-24 h-1 bg-brand rounded-full -translate-x-1/2"
+    ></span>
+  </h2>
+  <p class="text-gray-600 mt-4 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+    Scopri perché le aziende si affidano a <strong>Sistema Calzatura</strong> per mantenere la loro forza lavoro sicura, confortevole e produttiva.
+  </p>
+</div>
 
-  <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    <!-- Benefit 1 -->
-    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-right">
-      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
-        <i data-lucide="user-check" class="w-8 h-8"></i>
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+    <!-- Card 1 -->
+    <div
+      class="group bg-white rounded-2xl p-6 shadow hover:shadow-xl transition border-t-4 border-brand overflow-hidden"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+      <div class="w-14 h-14 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto
+                  transform transition-transform duration-300 group-hover:scale-110">
+        <i data-lucide="file-text" class="w-7 h-7"></i>
       </div>
-      <h4 class="text-xl font-semibold mb-2">Calzata Perfetta, Sempre</h4>
-      <p class="text-gray-600">
-        I fitting professionali in negozio garantiscono la misura ideale—niente resi, nessun problema.
+      <h4 class="text-lg font-semibold mb-2">Zero stress amministrativo</h4>
+      <p class="text-gray-600 text-sm mb-4">
+        Il sistema genera automaticamente i documenti di consegna, eliminando la gestione manuale.
       </p>
     </div>
 
-    <!-- Benefit 2 -->
-    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-up">
-      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
-        <i data-lucide="shield-off" class="w-8 h-8"></i>
+    <!-- Card 2 -->
+    <div
+      class="group bg-white rounded-2xl p-6 shadow hover:shadow-xl transition border-t-4 border-brand overflow-hidden"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+      <div class="w-14 h-14 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto
+                  transform transition-transform duration-300 group-hover:scale-110">
+        <i data-lucide="dollar-sign" class="w-7 h-7"></i>
       </div>
-      <h4 class="text-xl font-semibold mb-2">Protezione Certificata ASTM</h4>
-      <p class="text-gray-600">
-        Punta in acciaio, resistenti alle forature e agli scivolamenti—le nostre calzature superano i più elevati standard di sicurezza.
+      <h4 class="text-lg font-semibold mb-2">Controllo totale delle spese</h4>
+      <p class="text-gray-600 text-sm mb-4">
+        Imposta un budget per dipendente e monitora gli acquisti con report dettagliati.
       </p>
     </div>
 
-    <!-- Benefit 3 -->
-    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-up">
-      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
-        <i data-lucide="refresh-ccw" class="w-8 h-8"></i>
+    <!-- Card 3 -->
+    <div
+      class="group bg-white rounded-2xl p-6 shadow hover:shadow-xl transition border-t-4 border-brand overflow-hidden"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+      <div class="w-14 h-14 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto
+                  transform transition-transform duration-300 group-hover:scale-110">
+        <i data-lucide="user-check" class="w-7 h-7"></i>
       </div>
-      <h4 class="text-xl font-semibold mb-2">Fatturazione senza Problemi</h4>
-      <p class="text-gray-600">
-        Una fattura unica per tutti gli ordini—report digitali ti mantengono pronto per le verifiche in ogni momento.
+      <h4 class="text-lg font-semibold mb-2">Massimo comfort per i lavoratori</h4>
+      <p class="text-gray-600 text-sm mb-4">
+        Ogni dipendente può provare e scegliere la calzatura più confortevole e sicura.
       </p>
     </div>
 
-    <!-- Benefit 4 -->
-    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition" data-aos="fade-left">
-      <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto">
-        <i data-lucide="bar-chart-2" class="w-8 h-8"></i>
+    <!-- Card 4 -->
+    <div
+      class="group bg-white rounded-2xl p-6 shadow hover:shadow-xl transition border-t-4 border-brand overflow-hidden"
+      data-aos="zoom-in"
+      data-aos-delay="400"
+    >
+      <div class="w-14 h-14 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto
+                  transform transition-transform duration-300 group-hover:scale-110">
+        <i data-lucide="trending-up" class="w-7 h-7"></i>
       </div>
-      <h4 class="text-xl font-semibold mb-2">Analisi in Tempo Reale</h4>
-      <p class="text-gray-600">
-        Dashboard in tempo reale tracciano metriche di spesa, conformità e comfort permettendoti di ottimizzare continuamente.
+      <h4 class="text-lg font-semibold mb-2">Aumento della produttività</h4>
+      <p class="text-gray-600 text-sm mb-4">
+        Lavorare con scarpe comode può incrementare la produttività fino al 20%.
+      </p>
+    </div>
+
+    <!-- Card 5 -->
+    <div
+      class="group bg-white rounded-2xl p-6 shadow hover:shadow-xl transition border-t-4 border-brand overflow-hidden"
+      data-aos="zoom-in"
+      data-aos-delay="500"
+    >
+      <div class="w-14 h-14 bg-brand text-white rounded-full flex items-center justify-center mb-4 mx-auto
+                  transform transition-transform duration-300 group-hover:scale-110">
+        <i data-lucide="gift" class="w-7 h-7"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-2">Sconti fedeltà</h4>
+      <p class="text-gray-600 text-sm mb-4">
+        Più acquisti, più risparmi. Lo sconto cresce progressivamente fino al 10%.
       </p>
     </div>
   </div>
 </section>
+
 
 
  <!-- LOYALTY REWARDS -->
@@ -436,7 +852,7 @@
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- WHY CHOOSE US 
 <section id="choose" class="py-24 bg-white clip-top" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
     <div class="space-y-6" data-aos="fade-right">
@@ -490,83 +906,192 @@
 </section>
 
 <!-- TRUSTED LOGOS -->
-<section class="py-16 bg-gray-50" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto px-6 text-center mb-8">
-    <h3 class="text-2xl font-semibold">I nostri partner di fiducia</h3>
-    <p class="text-gray-600">Al servizio dei leader in ogni settore.</p>
+<section
+  class="relative py-16 bg-gray-50 overflow-hidden"
+  data-aos="fade-up"
+  style="
+    /* subtle dotted pattern */
+    background-image:
+      radial-gradient(rgba(175,29,39,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  "
+>
+  <!-- accent blobs -->
+  <div class="absolute top-0 left-1/2 w-96 h-96 -translate-x-1/2 bg-brand/10 rounded-full mix-blend-multiply"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-brand/5 rounded-full"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 text-center mb-12">
+    <!-- Gradient heading with underline -->
+    <h3
+      class="relative inline-block text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent
+             bg-gradient-to-r from-brand to-red-500 mb-4"
+    >
+      I nostri partner di fiducia
+      <span
+        class="absolute -bottom-2 left-1/2 w-20 h-1 bg-brand rounded-full -translate-x-1/2"
+      ></span>
+    </h3>
+    <p class="text-gray-600 text-lg">Al servizio dei leader in ogni settore.</p>
   </div>
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
-    <img src="assets/y (3).png" alt="Marchio 1" class="mx-auto grayscale hover:grayscale-0 transition">
-    <img src="assets/y (2).png" alt="Marchio 2" class="mx-auto grayscale hover:grayscale-0 transition">
-    <img src="assets/y (4).png" alt="Marchio 3" class="mx-auto grayscale hover:grayscale-0 transition">
-    <img src="assets/y (5).png" alt="Marchio 4" class="mx-auto grayscale hover:grayscale-0 transition">
+
+  <div class="relative z-10 max-w-6xl mx-auto px-8 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
+    <!-- wrap each logo in a card -->
+    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/y (3).png" alt="Marchio 1" class="max-h-20 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/y (2).png" alt="Marchio 2" class="max-h-20 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/y (4).png" alt="Marchio 3" class="max-h-20 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/y (5).png" alt="Marchio 4" class="max-h-20 object-contain" />
+    </div>
   </div>
 </section>
 
+
 <!-- CONTACT FORM -->
-<section id="contact" class="py-24 bg-light-bg clip-bottom" data-aos="fade-up">
+<section
+  id="contact"
+  class="relative py-24 bg-light-bg overflow-hidden"
+  style="
+    /* subtle dotted background to match the site */
+    background-image: radial-gradient(rgba(175,29,39,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  "
+  data-aos="fade-up"
+>
+  <!-- Section header -->
   <div class="max-w-2xl mx-auto px-6 text-center mb-12">
-    <h2 class="text-3xl font-bold">Contattaci</h2>
-    <p class="text-gray-600 mt-2">
+    <h2 class="inline-block text-4xl font-extrabold text-brand">
+      Contattaci
+      <span class="block h-1 w-20 bg-brand rounded-full mx-auto mt-2"></span>
+    </h2>
+    <p class="mt-4 text-gray-600">
       Pronto a ottimizzare il tuo programma di calzature di sicurezza? Lasciaci i tuoi dati e ti contatteremo entro 24 ore.
     </p>
   </div>
-  <form class="max-w-2xl mx-auto px-6 grid gap-6"
-        action="#" method="POST">
-    <div class="grid sm:grid-cols-2 gap-6">
-      <input type="text" name="name" required
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
-             placeholder="Nome completo / Azienda">
-      <input type="email" name="email" required
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
-             placeholder="Indirizzo email">
-    </div>
-    <div class="grid sm:grid-cols-2 gap-6">
-      <input type="tel" name="phone"
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
-             placeholder="Numero di telefono">
-      <input type="text" name="employees"
-             class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
-             placeholder="Numero di dipendenti">
-    </div>
-    <textarea name="message" rows="4" required
-              class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-offset-1 focus:ring-brand"
-              placeholder="Come possiamo aiutarti?"></textarea>
-    <button type="submit"
-            class="w-full py-4 bg-brand text-white font-semibold rounded-full shadow-lg hover:scale-105 transition">
-      Invia richiesta
-    </button>
-  </form>
-</section>
 
-<!-- FULL-INFO TWO-COLUMN FOOTER -->
-<footer class="bg-gray-50 py-12">
-  <div class="max-w-screen-md mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-    <!-- Column 1: Logo -->
-    <div class="flex justify-center md:justify-start">
-  <img
-    src="assets/Sistema (1).png"
-    alt="Ferrari Service S.r.l."
-    class="max-h-16 w-auto object-contain"
-  />
-</div>
+  <!-- Form card -->
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="bg-white rounded-3xl shadow-xl p-8 grid gap-6">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Nome completo / Azienda"
+          class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3
+                 focus:ring-2 focus:ring-brand focus:outline-none
+                 shadow-sm transition"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Indirizzo email"
+          class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3
+                 focus:ring-2 focus:ring-brand focus:outline-none
+                 shadow-sm transition"
+        />
+      </div>
 
-    <!-- Column 2: Full Contact Info -->
-    <div class="flex flex-col items-center space-y-1 text-gray-800 text-sm leading-snug">
-      <p class="font-semibold">Ferrari Service S.r.l.</p>
-      <p>Via Daniele Manin 176</p>
-      <p>31015 Conegliano (TV)</p>
-      <p>P.IVA 03615110263</p>
-      <p><a href="mailto:info@ferrariservice.it" class="text-brand hover:underline">info@ferrariservice.it</a></p>
-      <p><a href="tel:+390438896013" class="text-brand hover:underline">tel. 0438.896013</a></p>
-      <p><a href="tel:+390438896317" class="text-brand hover:underline">tel. 0438.896317</a></p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Numero di telefono"
+          class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3
+                 focus:ring-2 focus:ring-brand focus:outline-none
+                 shadow-sm transition"
+        />
+        <input
+          type="text"
+          name="employees"
+          placeholder="Numero di dipendenti"
+          class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3
+                 focus:ring-2 focus:ring-brand focus:outline-none
+                 shadow-sm transition"
+        />
+      </div>
+
+      <textarea
+        name="message"
+        rows="4"
+        required
+        placeholder="Come possiamo aiutarti?"
+        class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3
+               focus:ring-2 focus:ring-brand focus:outline-none
+               shadow-sm transition"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="w-full py-4 bg-gradient-to-r from-brand to-red-500
+               text-white font-semibold rounded-full shadow-lg
+               hover:scale-105 transform transition"
+      >
+        Invia richiesta
+      </button>
     </div>
   </div>
+</section>
+
+
+<!-- FULL-INFO TWO-COLUMN FOOTER -->
+<footer
+  class="relative bg-gray-50 border-t-2 border-brand py-12"
+  style="
+    background-image: radial-gradient(rgba(175,29,39,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  "
+  data-aos="fade-up"
+>
+  <div
+    class="max-w-6xl mx-auto px-6 flex flex-col items-center md:flex-row md:justify-center md:space-x-16 space-y-8 md:space-y-0"
+  >
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="assets/Sistema (1).png"
+           alt="Ferrari Service S.r.l."
+           class="h-16 w-auto mx-auto" />
+    </div>
+
+    <!-- Full Contact Info -->
+    <div class="text-center space-y-1 text-sm leading-relaxed">
+      <p class="text-xl font-bold text-dark">Ferrari Service S.r.l.</p>
+      <p class="text-gray-700">Via Daniele Manin 176</p>
+      <p class="text-gray-700">31015 Conegliano (TV)</p>
+      <p class="text-gray-700">P.IVA 03615110263</p>
+      <p>
+        <a href="mailto:info@ferrariservice.it"
+           class="text-brand hover:text-red-600 transition">
+          info@ferrariservice.it
+        </a>
+      </p>
+      <p>
+        <a href="tel:+390438896013"
+           class="text-brand hover:text-red-600 transition">
+          tel. 0438.896013
+        </a>
+      </p>
+      <p>
+        <a href="tel:+390438896317"
+           class="text-brand hover:text-red-600 transition">
+          tel. 0438.896317
+        </a>
+      </p>
+    </div>
+  </div>
+
   <!-- Copyright -->
   <p class="mt-8 text-center text-gray-600 text-sm">
     © 2025 Tutti i diritti riservati a Ferrari Service S.r.l.
   </p>
 </footer>
+
 
 
 
