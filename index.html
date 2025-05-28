@@ -90,19 +90,21 @@
 
 
   <!-- HERO -->
-  <section
+  <!-- HERO -->
+<section
   id="hero"
-  class="relative bg-light-bg bg-cover bg-center min-h-screen flex items-center overflow-hidden pt-20 lg:pt-0"
+  class="relative bg-light-bg bg-cover bg-center min-h-screen flex items-center overflow-hidden pt-32 lg:pt-0"
   style="background-image:url('assets/hero-bg.jpg')"
 >
   <div class="absolute inset-0 bg-white/60"></div>
 
   <div class="relative z-10 container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
     <!-- Text -->
-    <div class="lg:col-span-5 lg:col-start-2 text-left" data-aos="fade-right">
+    <div class="lg:col-span-5 lg:col-start-2 text-left">
       <div class="lg:max-w-2xl space-y-6">
         <!-- Main title -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark">
+        <h1 class="text-5xl sm:text-6xl lg:text-6xl font-extrabold text-dark transition-all duration-700 ease-out transform">
+
           Sistema Calzatura
         </h1>
 
@@ -127,7 +129,7 @@
              class="px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg hover:scale-105 transition">
             Contattaci
           </a>
-          <a href="#benefits"
+          <a href="#intro"
              class="px-6 py-3 border-2 border-brand text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">
             Scopri di più
           </a>
@@ -146,6 +148,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- INTRO “Gestire le calzature…” – ENHANCED SECTION -->
 <!-- INTRO “Gestire le calzature…” – WITH ONLY TOP WAVE -->
@@ -168,10 +171,11 @@
 
   <!-- Content -->
   <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6">
-    <!-- Styled two-line heading -->
+    <!-- Styled two-line heading with animation -->
     <h2
       class="relative inline-block text-3xl md:text-4xl font-extrabold leading-tight"
-      data-aos="fade-down"
+      data-aos="zoom-in"
+      data-aos-delay="0"
     >
       <span class="block bg-clip-text text-transparent bg-gradient-to-r from-brand to-red-500">
         Gestire le calzature antinfortunistiche
@@ -184,25 +188,30 @@
       ></span>
     </h2>
 
-    <!-- Subtitle -->
-    <p class="text-lg text-dark/70" data-aos="fade-up" data-aos-delay="100">
+    <!-- Subtitle with fade-up -->
+    <p
+      class="text-lg text-dark/70"
+      data-aos="fade-up"
+      data-aos-delay="150"
+    >
       Con <strong>Sistema Calzatura</strong>, ogni lavoratore può scegliere e provare le
       scarpe più adatte alle proprie esigenze, rispettando il budget e le
       normative aziendali. Il tutto con un processo snello e senza burocrazia.
     </p>
 
-    <!-- CTA button -->
+    <!-- CTA button with fade-up -->
     <a
-      href="#come-funziona"
+      href="#clienti"
       class="inline-block mt-4 px-8 py-3 rounded-full border-2 border-brand text-brand font-semibold
              hover:bg-brand hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
       data-aos="fade-up"
-      data-aos-delay="200"
+      data-aos-delay="300"
     >
       Scopri di più
     </a>
   </div>
 </section>
+
 
 
 
@@ -248,7 +257,8 @@
 </h2>
 
   <p class="text-lg text-dark/70">
-    Segui questi semplici passi per ottenere le tue calzature di sicurezza.
+    semplifica radicalmente la gestione delle scarpe antinfortunistiche aziendali. 
+Un sistema studiato per liberare l’azienda da burocrazia, sprechi di tempo e gestione manuale, offrendo una soluzione comoda, automatizzata e tracciabile
   </p>
 </div>
 
@@ -260,7 +270,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">1</span>
           <i data-lucide="credit-card" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Definizione Budget</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Definizione Budget</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           L’azienda stabilisce un budget massimo e il tipo di calzatura richiesto per ogni dipendente (es. S1P, S3).
@@ -271,7 +281,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">2</span>
           <i data-lucide="shopping-bag" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Selezione Calzatura</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Selezione Calzatura</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           Il dipendente si reca in negozio e sceglie la calzatura più adatta al proprio ruolo.
@@ -282,7 +292,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">3</span>
           <i data-lucide="check-circle" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Autorizzazione & Acquisto</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Autorizzazione & Acquisto</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           Il negozio verifica l’autorizzazione e completa la vendita senza pagamenti anticipati.
@@ -293,7 +303,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">4</span>
           <i data-lucide="file-text" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Fatturazione</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Fatturazione</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           Il negozio fattura direttamente all’azienda, evitando ogni onere.
@@ -304,7 +314,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">5</span>
           <i data-lucide="bar-chart-2" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Report & Monitoraggio</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Report & Monitoraggio</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           L’azienda riceve report dettagliati sugli acquisti per ottimizzare le spese.
@@ -315,7 +325,7 @@
         <div class="flex items-center space-x-4">
           <span class="text-2xl font-bold text-brand/50">6</span>
           <i data-lucide="package" class="w-6 h-6 text-brand"></i>
-          <h3 class="text-lg font-semibold text-brand">Documento di Consegna</h3>
+          <h3 class="text-2xl md:text-lg font-semibold text-brand">Documento di Consegna</h3>
         </div>
         <p class="mt-3 text-gray-700 text-sm">
           Il sistema genera automaticamente il documento di consegna, garantendo tracciabilità.
@@ -445,10 +455,61 @@
   <div class="absolute top-24 right-20 w-72 h-72 blob bg-brand opacity-10 animate-float"></div>
 </section>
 
+<section
+  id="clienti"
+  class="relative py-16 bg-[#FAF6F2] overflow-hidden"
+  data-aos="fade-up"
+  style="
+    background-image: radial-gradient(rgba(175,29,39,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+  "
+>
+  <!-- Accent blobs -->
+  <div class="absolute top-0 left-1/2 w-96 h-96 -translate-x-1/2 bg-brand/10 rounded-full mix-blend-multiply"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-brand/5 rounded-full"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 text-center mb-12">
+    <!-- Gradient heading with underline -->
+    <h3
+      class="relative inline-block text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent
+             bg-gradient-to-r from-brand to-red-500 mb-4"
+    >
+      Scelti ogni giorno da:
+      <span class="absolute -bottom-2 left-1/2 w-20 h-1 bg-brand rounded-full -translate-x-1/2"></span>
+    </h3>
+    <p class="text-gray-600 text-lg">A trusted choice for companies across Italy.</p>
+  </div>
+
+  <!-- Logos grid -->
+  <div class="relative z-10 max-w-6xl mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-center">
+    <!-- Logo Card -->
+    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/logo1.png" alt="Visottica" class="max-h-16 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/logo2.png" alt="Somec" class="max-h-16 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/logo3.png" alt="Electrolux" class="max-h-16 object-contain" />
+    </div>
+    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
+      <img src="assets/logo4.png" alt="Eclisse" class="max-h-16 object-contain" />
+    </div>
+  </div>
+
+  <!-- CTA button (optional) -->
+  <div class="relative z-10 text-center mt-10">
+    <a href="#contact" class="inline-block px-6 py-3 bg-brand text-white rounded-full shadow-lg hover:scale-105 transition">
+      Contattaci
+    </a>
+  </div>
+</section>
 
 
-<!-- CLIENT VIDEO SECTION -->
-<!-- CLIENT VIDEO SECTION -->
+
+
+
+
 <!-- CLIENT VIDEO SECTION – Dynamic Geometric Background -->
 <section
   id="video"
@@ -498,7 +559,7 @@
 
     <!-- CTA Button -->
     <a
-      href="#come-funziona"
+      href="#benefits"
       class="inline-block px-8 py-3 rounded-full border-2 border-white text-white font-semibold
              transform transition-transform duration-300 hover:bg-white hover:text-brand hover:scale-105
              shadow-md hover:shadow-lg"
@@ -907,49 +968,46 @@
 
 <!-- TRUSTED LOGOS -->
 <section
-  class="relative py-16 bg-gray-50 overflow-hidden"
+  class="relative py-20 bg-[#FCEBEA] overflow-hidden"
   data-aos="fade-up"
   style="
-    /* subtle dotted pattern */
     background-image:
       radial-gradient(rgba(175,29,39,0.02) 1px, transparent 1px);
     background-size: 20px 20px;
   "
 >
-  <!-- accent blobs -->
-  <div class="absolute top-0 left-1/2 w-96 h-96 -translate-x-1/2 bg-brand/10 rounded-full mix-blend-multiply"></div>
-  <div class="absolute bottom-0 right-0 w-72 h-72 bg-brand/5 rounded-full"></div>
+  <!-- Accent shape behind heading -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand/10 rounded-full mix-blend-multiply z-0"></div>
 
+  <!-- Heading -->
   <div class="relative z-10 max-w-6xl mx-auto px-6 text-center mb-12">
-    <!-- Gradient heading with underline -->
     <h3
       class="relative inline-block text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent
              bg-gradient-to-r from-brand to-red-500 mb-4"
     >
       I nostri partner di fiducia
-      <span
-        class="absolute -bottom-2 left-1/2 w-20 h-1 bg-brand rounded-full -translate-x-1/2"
-      ></span>
+      <span class="absolute -bottom-2 left-1/2 w-20 h-1 bg-brand rounded-full -translate-x-1/2"></span>
     </h3>
-    <p class="text-gray-600 text-lg">Al servizio dei leader in ogni settore.</p>
+    <p class="text-gray-700 text-lg">Al servizio dei leader in ogni settore.</p>
   </div>
 
-  <div class="relative z-10 max-w-6xl mx-auto px-8 grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
-    <!-- wrap each logo in a card -->
-    <div class="flex items-center justify-center p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-      <img src="assets/y (3).png" alt="Marchio 1" class="max-h-20 object-contain" />
+  <!-- Logos Grid -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition">
+      <img src="assets/utility.png" alt="Utility Diadora" class="max-h-24 object-contain" />
     </div>
-    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-      <img src="assets/y (2).png" alt="Marchio 2" class="max-h-20 object-contain" />
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition">
+      <img src="assets/reebok.png" alt="Reebok" class="max-h-24 object-contain" />
     </div>
-    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-      <img src="assets/y (4).png" alt="Marchio 3" class="max-h-20 object-contain" />
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition">
+      <img src="assets/upower.png" alt="U Power" class="max-h-24 object-contain" />
     </div>
-    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-      <img src="assets/y (5).png" alt="Marchio 4" class="max-h-20 object-contain" />
+    <div class="flex items-center justify-center p-8 bg-white rounded-2xl shadow hover:shadow-lg transition">
+      <img src="assets/puma.png" alt="Puma" class="max-h-24 object-contain" />
     </div>
   </div>
 </section>
+
 
 
 <!-- CONTACT FORM -->
